@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZIX</title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+/*#FFB500*/
+		*{
+               font-family: 'Roboto', sans-serif;
+
+		}
+
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			background-color: black;
+			
+		}
+		button:focus{
+			outline: none;
+		}
+#img-h{
+	background:linear-gradient(#00000070,#00000070) ,url(8.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120vh;
+	position: relative;
+	top: -110px;
+	z-index: 0;
+	overflow: hidden;
+
+}
+#msg{
+border: 0px solid white;
+text-align: center;
+width:500px;
+	margin: auto;
+position: relative;
+top: 350px;
+transition: 0.5s;
+z-index: 99999999!important;
+}
+#msg h1{
+	font-weight: bolder;
+	color:orange;
+	
+	font-size: 50px;
+
+	text-shadow: 0px 0px 2px black,0px 0px 4px black;
+}
+#msg p{
+	color: white;
+	font-weight: bolder;
+	font-size: 45px;
+	text-shadow: 0px 0px 2px black,0px 0px 4px black;
+	 letter-spacing: 5px;
+}
+
+#btn
+{
+	width: 200px;
+	padding:15px 0px 15px 0px ;
+	text-align: center;
+	background-color:black;
+	color: orange;
+	border: 5px double orange;
+	border-radius: 40px;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+
+#btn:hover
+{
+	border: 2px solid black;
+	background-color: orange;
+	color: black;
+}
+
+#mouse{
+	border:2px solid orange;
+	width: 50px;
+	text-align: center;
+	height: 80px;
+	border-radius: 70px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+#mouse p{
+	background-color: yellow;
+	padding: 5px;
+	height: 5px;
+	width: 5px;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 5px;
+	animation: ani linear infinite 2s;
+}
+
+@keyframes ani{
+	0%{
+		margin-top: 5px;
+		background-color: orange;
+	}
+	25%{
+		margin-top: 10px;
+		background-color: black;
+	}
+	50%{
+		margin-top: 15px;
+		background-color: white;
+	}
+	100%{
+		margin-top: 20px;
+		background-color: gold;
+	}
+}
+#site-name{
+	position: relative;
+	top: 40px;
+padding: 10px 31px 10px 31px ;
+	border: 5px double  orange;
+	font-size: 25px;
+	color: white;
+	margin-left: 50px;
+	letter-spacing: 2px;
+
+
+}
+
+#call{
+	
+	position: absolute;
+	top: 52px;
+	left: 80%;
+	width: 150px;
+	padding: 7px 0px 7px 0px ;
+	text-align: center;
+	background-color:black;
+	color: orange;
+	border: 5px double orange;
+	border-radius: 40px;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+#call:hover{
+	background-color:orange;
+	color: black;
+	border: 2px solid black;
+
+
+}
+
+#num{
+color: orange;background-color:black;width: 200px;height:40px;position: absolute;left: 77.7%;top:100px;text-align: center;padding-top: 10px;
+}
+
+
+/*		///navbar//*/
+
+#nav{
+	width: 100%;
+	transition: 0.5s!important;
+	box-shadow: 0px 0px 7px 0px orange;
+	height: 110px;
+	background-color: #00000299;
+	position: absolute;
+	top: 0px;
+	transition: 1s!important;
+	z-index: 999;
+	
+}
+
+		#nav ul{
+			
+			height: 40px;
+			width: 500px;
+			padding-top: 15px;
+			margin: auto;
+			margin-top: 0px;
+
+			
+		}
+		#nav ul li{
+			float: left;
+			margin-left: 15px;
+			list-style: none;
+			font-size: 20px;
+		padding: 5px 0px 5px 0px;
+		width: 70px;
+		text-align: center;
+		font-weight: bolder;
+		border-bottom: 0px solid orange;
+transition: 0.5s;
+color: orange;
+letter-spacing: 2px;
+			
+		}
+		#nav ul li:hover{
+			background-color: black;
+			color:white;
+			width: 90px;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;
+
+
+		}
+
+
+		
+#contact:hover{
+	width: 100px!important;
+}
+#nav-bg{
+	width: 0%;
+	height: 0vh;
+	background: linear-gradient(to top,#00000099,#000000),url(5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 99999;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	transition: 0.5s;
+	visibility: hidden;
+
+}
+#nav-bg #ul{
+
+height: 90%;
+margin-top: 150px!important;
+margin: auto;
+width: 200px;
+} 
+
+#nav-bg #li{
+			float: none!important;
+			text-align: center;
+			margin-top: 10px;
+			width: 150px;
+            font-size: 25px;
+			list-style: none;
+		padding: 5px 0px 5px 0px;
+		font-weight: bolder;
+		border-bottom: 0px solid orange;
+transition: 0.5s;
+color: orange;
+letter-spacing: 2px;
+			
+
+		}
+		#nav-bg #li:hover{
+				background-color: black;
+			color:white;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;
+}
+		#close{
+			margin-left: 80%;
+			border: 2px solid orange;
+			padding: 10px 10px 10px 10px;
+			position: relative;
+			top: 80px!important;
+			color: red;
+			font-size: 27px;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+		#close:hover{
+			background-color: red;
+			color:black;
+		}
+
+		#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 45px;
+			left: 90%;
+		}
+
+/*///section 2///*/
+
+#d-1{
+
+position: relative;
+top: -50px;
+width: 95%;
+margin: auto;
+
+}
+
+.icon{
+	font-size: 35px;
+	color: orange;
+}
+
+#icon-t h1{
+	font-size: 20px;
+	color: white;
+
+}
+
+#icon-t p{
+ font-size: 14px;
+ width: 90%;
+ margin: auto;
+ color: #ffffff80;
+
+}
+
+/*<!-- //select your meal// -->*/
+#meal-d-1{
+	margin-bottom: 80px!important;
+	
+		
+	
+}
+
+#meal-d-2{
+	height: 280px;
+	width: 100%!important;	
+	transition: 0.5s;
+}
+
+
+#meal-d-3{
+	height: 280px;
+	width: 100%!important;	
+	transition: 0.5s;
+}
+
+#meal-d-2 img{
+height: 100%;
+width: 100%;
+border-radius: 10px;
+
+}
+#meal-d-3 img{
+height: 100%;
+width: 100%;
+border-radius: 10px;
+
+
+margin-top: 5px;
+}
+
+#meal-d-1 p{
+	
+	color: #ffffff99;
+}
+#meal-d-1 h1{
+	
+	color: #ffffff;
+	font-weight: bolder;
+}
+#meal-d-1 h1 span{
+	
+	color: orange;
+}
+#meal-d-1 button{
+width: 200px;
+margin-top: 10px;
+border-radius: 20px;
+border: 5px double orange;
+background-color: transparent;
+color: orange;
+font-weight: bolder;
+transition: 0.5s;
+
+}
+
+#meal-d-1 button:hover{
+	background-color: orange;
+
+	color: black;
+}
+#m-p{
+color: orange;
+font-size: 27px;
+}
+#m-pp{
+	color: white;
+font-size: 20px;
+font-weight: bolder;
+padding-top: 20px;
+}
+#m-nn{
+	color: white;
+font-size: 20px;
+font-weight: bolder;
+padding-top: 20px;
+}
+#m-n{
+color: orange;
+font-size: 20px;
+}
+
+/*///special menu item///*/
+#spc{
+	width: 90%;
+	margin: auto;
+}
+
+#sp-11{
+	background: url(s1.jpeg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+#sp-12{
+	background: url(s2.jpeg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+#sp-13{
+	background: url(s3.jpeg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+#sp-14{
+	background: url(s4.jpeg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+#sp-15{
+	background: url(d1.jpg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+#sp-16{
+	background: url(d2.jpeg)!important;
+	background-repeat: no-repeat;
+	background-size: cover!important;
+	background-position: center!important;
+	
+	height: 200px;
+}
+
+#sp-2{
+	background-color: ;
+	height: 200px;
+	padding-top: 40px ;
+	border:2px solid #002222;
+	width: 100%;
+
+}
+#sp-2 #h{
+color: white;
+font-size: 20px;
+padding-left: 10px;
+font-weight: bolder;
+
+}
+#sp-2 span{
+color: orange;
+padding-left: 10px;
+font-size: 24px;
+}
+#sp-2 p{
+	color: #ffffff99;
+	padding-left: 10px;
+}
+#sp-2 button{
+	width: 150px;
+margin-top: 10px;
+border-radius: 20px;
+border: 5px double orange;
+background-color: transparent;
+color: orange;
+font-weight: bolder;
+transition: 0.5s;
+margin-left: 10px;
+}
+
+#sp-2 button:hover{
+	background-color: orange;
+	color: black;
+}
+
+/*our master chef*/
+#our-img-1{
+	background: url(2.jpeg);
+    border-radius: 7px;
+    border:2px double #002222;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  right;
+    height: 290px;
+}
+#our-img-2{
+	background: url(1.jpeg);
+    border-radius: 7px;
+    border:2px double #002222;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 290px;
+}
+#our-img-3{
+	background: url(3.jpeg);
+    border-radius: 7px;
+    border:2px double #002222;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 290px;
+}
+#our-img-4{
+	background: url(4.jpeg);
+    border-radius: 7px;
+    border:2px double #002222;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    height: 290px;
+}
+#chef-1 h4{
+
+ color: white;
+ font-size: 21px;
+ padding-top: 20px;
+ font-weight: 500;
+
+}
+#chef-1 p{
+	color: #ffffff79;
+
+	
+}
+#chef-1 span i{
+	color: orange;
+	padding-right: 10px;
+	font-size: 17px;
+	transition: 0.2s;
+	font-weight: 100;
+}
+#chef-1 span i:hover{
+	cursor: pointer;
+font-size: 19px;
+	color: white;
+}
+
+/*//book a table///*/
+#table-d{
+		background: linear-gradient(to left,transparent,#00000099 50%),url(5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:100px 0px 100px 0px; 
+	width: 100%;
+	
+}
+#table{
+	border:1px solid white;
+	width: 600px;
+	margin-left: 10%;
+	height: 400px;
+	background-color: #00000099;
+	border:10px double orange;
+	text-align: center;
+	border-radius: 10px;
+}
+#table h1{
+	font-weight: bolder;
+	color:white;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	text-shadow: 2px 2px 2px black,1px 4px 4px black;
+	letter-spacing:2px;
+	font-family: "segoe-script";
+
+}
+#table label{
+	width: 18%;
+	
+	padding-top: 10px;
+	font-weight:900;
+	color:orange;
+	font-size: 16px;
+}
+#table input{
+	width:27%;
+	background-color:black;
+	margin-top: 20px;
+	text-align: center;
+	color:orange;
+	height: 35px;
+	border-radius: 70px;
+     margin-right: 22px;
+	border:2px solid orange;
+	box-shadow: 0px 0px 5px 5px black;
+}
+input:focus{
+	outline: none;
+}
+#book-btn{
+		width: 200px;
+margin-top: 10px;
+border-radius: 200px;
+border: 5px double orange;
+padding: 10px 10px 10px 10px;
+background-color: orange;
+color: black;
+font-weight: bolder;
+transition: 0.5s;
+
+margin-top: 20px;
+
+}
+#book-btn:hover{
+	background: black;
+	color: orange;
+	width: 250px;
+}
+
+/*//last section//*/
+#l-sec{
+	background-color:#00222249;
+	margin-top: 150px!important;
+	padding-top: 50px;
+	padding-bottom:20px;
+	box-shadow: 0px 0px 10px 1px #002222;
+	
+}
+#site-name-l{
+
+padding: 10px 41px 10px 41px ;
+	border: 5px double  orange;
+	font-size: 50px;
+	color: white;
+	letter-spacing: 2px;
+	margin: auto;
+	text-align: center;
+}
+#logo-d{
+	width: 300px;
+	margin: auto;
+}
+
+#l-1 div{
+	margin: auto;
+	
+	width: 300px;
+	text-align: center;	
+}
+#l-1 div i{
+	color: orange!important;
+	font-size: 25px;
+	margin-right: 5px;
+	margin-left: 5px;
+	transition: 0.2s;
+}
+#l-1 div i:hover{
+	color: white!important;
+	cursor: pointer;
+}
+#l-2{
+text-align: center!important;
+}
+#l-2 h2{
+	color: white;
+}
+#l-2 p{
+color: orange;
+transition: 0.5s;
+}
+#l-2 p:hover{
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+}
+#l-3{
+	text-align: center;
+}
+#l-3 h2{
+color:white;
+}
+#l-3 h4{
+color:white;
+}
+#l-3 p{
+	color: orange;
+} 
+#l-3 input{
+	background-color: black;
+	padding-left: 20px;
+	border:none;
+	height: 38px;
+	border-radius: 10px;
+	color: orange;
+}
+#l-3 button{
+	background-color: transparent;
+	border:2px solid orange;
+	padding: 5px 15px 5px 15px ;
+	border-radius: 10px;
+	transition: 0.5s;
+	color: orange!important;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+#l-3 button:hover{
+	background-color: orange;
+	border-radius: 20px;
+	color: black!important;
+
+}
+#l-4 img{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+}
+#l-4 h2{
+	color: white;
+}
+#l-4 p{
+	color: orange;
+	transition: 0.5s;
+}
+#l-4 p:hover{
+	margin-left: 20px;
+	cursor: pointer;
+	color: #ffffff;
+
+}
+
+/*///responsive//*/
+
+@media(min-width: 1200px){
+#navicon{
+	visibility: hidden!important;
+}
+}
+
+@media(min-width: 1024px) and (max-width: 1199px){
+	#navicon{
+	visibility: hidden!important;
+}
+	#sp-12,#sp-13,#sp-14,#sp-15,#sp-16{
+		margin-top: 40px!important;
+	}
+	#sp-2{
+		margin-top: 40px!important;
+	}
+	#chef-1{
+		margin-top: 40px!important;
+	}
+	#img-h{
+		height: 100vh;
+	}
+}
+/*ipad pro*/
+@media(min-height: 1200px) and (max-height: 1370px){
+	#msg{
+		top: 600px!important;
+	}
+	#navicon{
+	visibility: hidden!important;
+}
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+	#sp-12,#sp-13,#sp-14,#sp-15,#sp-16{
+		margin-top: 40px!important;
+	}
+
+
+	#sp-2{
+		margin-top: 40px!important;
+	}
+	#chef-1{
+		margin-top: 40px!important;
+	}
+		#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+
+	#call{
+		left: 65%;
+	}
+	#num{
+		left: 62%;
+	}
+	#table{
+		margin: auto!important;
+	}
+}
+
+@media(min-width: 640px) and (max-width: 767px){
+	#sp-12,#sp-13,#sp-14,#sp-15,#sp-16{
+		margin-top: 40px!important;
+	}
+	#sp-2{
+		margin-top: 0px;
+	}
+	#chef-1{
+		margin-top: 40px!important;
+	}
+		#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#call{
+		left: 62%;
+	}
+	#num{
+		left: 59%;
+	}
+	#table{
+		margin: auto!important;
+	}
+
+.idli{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+	.biryani{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+}
+
+@media(min-width: 480px) and (max-width: 640px){
+	#sp-12,#sp-13,#sp-14,#sp-15,#sp-16{
+		margin-top: 40px!important;
+	}
+	#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 42px;
+			left: 90%;
+		}
+	html{
+		overflow-x: hidden!important;
+	}
+	#sp-2{
+		margin-top: 0px;
+	}
+	#chef-1{
+		margin-top: 40px!important;
+	}
+	#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#site-name{
+		font-size: 21px;
+	    top: 55px;
+	}
+	#call{
+		left: 60%;
+		font-size: 12px!important;
+		width: 120px;
+	    border:4px double orange;
+	}
+
+	#num{
+		left: 60%;
+		top: 92px;
+		font-size: 12px;
+		width: 120px;
+	}
+	#btn{
+		font-size: 12px;
+		width: 135px;
+		padding:10px 0px 10px 0px;
+	}
+	#msg {
+		width: 320px;
+	}
+	#msg h1{
+		font-size: 35px;
+	}
+	#msg p{
+		font-size: 29px;
+	}
+	#mouse{
+		width: 45px;
+		height: 70px;
+	}
+	#mouse p{
+		height: 2px!important;
+		width: 2px!important;
+		padding: 4px;
+	}
+	#table{
+		margin: auto!important;
+	}
+
+.idli{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+	.biryani{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+	#meal-d-2{
+		height: 150px;
+	}
+	#meal-d-3{
+		height: 150px;
+	}
+	#meal-d-2 img{
+		height: 150px;
+	}
+	#meal-d-3 img{
+		height: 150px;
+	}
+	#m-pp{
+		font-size: 18px;
+	}
+	#m-nn{
+		font-size: 18px;
+	}
+	#table{
+		width: 400px;
+		height: 350px;
+	}
+	#table h1{
+		font-size: 25px;
+	}
+	#table label{
+		font-size: 12px;	
+	}
+	#table input{
+      width: 24%;
+      height: 25px;
+      font-size: 12px;
+      margin-right: 10px;
+	}
+	#book-btn{
+		font-size: 12px;
+		width: 140px;
+		padding: 5px;
+
+	} 
+	#book-btn:hover{
+		width: 180px;
+	}
+     
+     .progress-bar{
+     	width: 100px!important;
+     }
+}
+
+@media(min-width: 320px) and (max-width: 479px){
+	#sp-12,#sp-13,#sp-14,#sp-15,#sp-16{
+		margin-top: 40px!important;
+	}
+	#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 37px;
+			left: 85%;
+		}
+	html{
+		overflow-x: hidden!important;
+	}
+	#img-h{
+		height: 100vh;
+	}
+	#sp-2{
+		margin-top: 0px;
+	}
+	#chef-1{
+		margin-top: 40px!important;
+	}
+	#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#site-name{
+		font-size: 21px;
+	    top: 55px;
+	    top: 20px;
+	}
+	#call{
+		left: 0%!important;
+		top: 68px;
+		margin-left: 45px;
+		font-size: 11px!important;
+		width: 120px;
+	    border:4px double orange;
+	}
+
+	#num{
+		left: 0%;
+		top: 110px;
+		margin-left: 44px;
+		font-size: 12px;
+		width: 120px;
+	}
+	#btn{
+		font-size: 12px;
+		width: 135px;
+		padding:10px 0px 10px 0px;
+	}
+	#msg {
+		width: 320px;
+	}
+	#msg h1{
+		font-size: 29px;
+	}
+	#msg p{
+		font-size: 25px;
+	}
+	#mouse{
+		width: 45px;
+		height: 70px;
+		margin-top: 20px;
+	}
+	#mouse p{
+		height: 2px!important;
+		width: 2px!important;
+		padding: 4px;
+	}
+	#table{
+		margin: auto!important;
+	}
+
+.idli{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+	.biryani{
+		margin-top: 40px!important;
+		margin-bottom: -40px!important;
+	}
+	#meal-d-2{
+		height: 150px;
+	}
+	#meal-d-3{
+		height: 150px;
+	}
+	#meal-d-2 img{
+		height: 150px;
+	}
+	#meal-d-3 img{
+		height: 150px;
+	}
+	#m-pp{
+		font-size: 12px;
+	}
+	#m-nn{
+		font-size: 12px;
+	}
+	#table{
+		width: 300px;
+		height: 350px;
+	}
+	#table h1{
+		font-size: 25px;
+	}
+	#table label{
+		font-size: 12px;	
+	}
+	#table input{
+      width: 27%;
+      height: 25px;
+      font-size: 12px;
+      margin-right: 0px;
+      padding-left: 5px;
+      padding-right: 5px;
+	}
+	#book-btn{
+		font-size: 12px;
+		width: 140px;
+		padding: 5px;
+
+	} 
+	#book-btn:hover{
+		width: 180px;
+	}
+     
+     .progress-bar{
+     	width: 100px!important;
+     }
+
+     #site-name-l{
+     	margin-left: auto!important;
+     	padding: 10px 40px 10px 40px ;
+     }
+     #logo-d{
+     	
+     width: 100%!important;
+     }
+     #l-1 div{
+     	width: 200px;
+     }
+     .text-light{
+     	font-size: 29px!important;
+     	padding-top: 5px;
+     }
+     #sp-2 #h{
+     	font-size: 16px!important;
+     }
+     #sp-2 span{
+     	font-size: 18px;
+     }
+}
+
+
+	</style>
+
+
+<div id="nav">
+	<span id="site-name">Z<span style="color: orange;">i</span>X</span>
+	<ul>
+		<li>Home</li>
+	    <li>Who</li>
+	    <li>Food</li>
+	    <li>Blog</li>
+	    <li id="contact">contact</li>
+	</ul>
+
+
+	<span id="navicon" onclick="opene();"><i class="fa fa-navicon"></i></span>
+
+
+	<button id="call"  >CALL NOW</button>
+	<p id="num" >+91 9354-699-687</p>
+</div>
+
+<div id="img-h">
+	<div id="msg">
+		<h1>WE WILL WELCOME WITH SWAG</h1>
+		<p><span style="color: orange;">#</span>AtZiX</p>
+		<a href="#book"><button id="btn">BOOK A TABLE</button></a>
+		<a href="#d-1"><div id="mouse"><p></p></div></a>
+	</div>
+</div>
+
+<!-- //mobile nav// -->
+	<div id="nav-bg">
+		<span id="close" onclick="closee();">&times;</span>
+		<ul id="ul">
+		<li id="li">Home</li>
+	    <li id="li">Who</li>
+	    <li id="li">Food</li>
+	    <li id="li">Blog</li>
+	    <li id="li">contact</li>
+		</ul>
+	</div>
+
+<!-- //section-2// -->
+
+<div   id="d-1">
+
+		<div class="row" id="icon-d">
+
+			<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto text-center" style="border: 10px double
+			orange;padding-top: 40px;padding-bottom: 40px;margin-top: 40px!important;height: 200px;">
+				<div class="icon m-auto"><i class="fa fa-cutlery  " aria-hidden="true"></i></div>
+				<div id="icon-t" class="m-auto">
+				<h1 >ENJOY EATING</h1>
+				<p class="text-capitalize">enjoy eating,karo meating...</p>
+			</div>
+
+		    </div>
+
+		    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto text-center"  style="border: 10px double
+			orange;padding-top: 40px;padding-bottom: 40px;margin-top: 40px!important;height: 200px;">
+				<div class="icon m-auto"><i class="fa fa-lemon-o" aria-hidden="true"></i></div>
+				<div id="icon-t" class="m-auto">
+				<h1 >FRESH FOODS</h1>
+				<p class="text-capitalize">our food is fresh,to karo aesh...</p>
+			</div>
+
+		    </div>
+
+		     <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto text-center"  style="border: 10px double
+			orange;padding-top: 40px;padding-bottom: 40px;margin-top: 40px!important;height: 200px;">
+				<div class="icon m-auto"><i class="fa fa-beer" aria-hidden="true"></i></div>
+				<div id="icon-t" class="m-auto">
+				<h1  >CUP OF COFFEES</h1>
+				<p class="text-capitalize">eat copico tofee,with cup of coffee...</p>
+			</div>
+
+		    </div>
+
+
+		     <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto text-center"  style="border: 10px double
+			orange;padding-top: 40px;padding-bottom: 40px;margin-top: 40px!important;height: 200px;">
+				<div class="icon m-auto"><i class="fa fa-pie-chart" aria-hidden="true"></i></div>
+				<div id="icon-t" class="m-auto">
+				<h1 class="text-capitalize" >VARIETY OF CAKES</h1>
+				<p class="text-capitalize" >we bakes,variety of cakes...</p>
+			</div>
+
+		    </div>
+
+
+		</div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- //select your meal// -->
+
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Some Meals</h1>
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+<div class="row">
+
+       <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10  col-10 d-block m-auto text-center" id="meal-d-1">
+       	<p >Select Your Meal</p>
+       	<h1>Popular <span>Foods<span></h1>
+       	<button id="b-1" onclick="breakfast();">Breakfast</button><br>
+       	<button id="b-2" onclick="lunch();">Lunch</button><br>
+       	<button id="b-3" onclick="dinner();">Dinner</button><br>
+       	<button id="b-4" onclick="dessert();">Dessert</button>
+       </div>
+ 
+        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5  col-5 d-block m-auto text-left" >
+       <p id="m-p">Breakfast</p>
+       <div id="meal-d-2">
+       	<img src="5.jpg">
+       </div>
+       <p class="text-center" id="m-pp">South Indian Foods</p>
+     
+       </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5  col-5 d-block m-auto text-right" >
+        <p id="m-n">1/4</p>
+       
+        <div id="meal-d-3"><img src="bb.jpg"></div>
+       <p class="text-center" id="m-nn">Indian Snacks</p>
+       </div>
+
+</div>
+</div>
+
+<!-- //special menu items// -->
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-top:100px!important;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Special Menu Items </h1>
+</div>
+<br>
+<br>
+
+<div  id="spc">
+	<div class="row" id="sp-row">
+
+		<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-11">
+			
+		</div>
+<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " style="margin-top: 0px!important;" id="sp-2">
+			<span id="h" class="text-capitalizeze">LARGE SAMOSA</span><span>₹50</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+		<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-12">
+			
+		</div>
+<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-2">
+			<span id="h" class="text-capitalizeze">PASTA TOMATO</span><span>₹140</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+		<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto idli"  id="sp-2">
+			<span id="h" class="text-capitalizeze">IDLI SAMBHAR</span><span>₹120</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+			<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-13">
+			
+		</div>
+
+		<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto biryani"  id="sp-2">
+			<span id="h" class="text-capitalizeze">CHICKEN BIRYANI</span><span>₹400</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+			<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-14">
+			
+		</div>
+
+        <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-15">
+			
+		</div>
+<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-2">
+			<span id="h" class="text-capitalizeze">CHOCOLATE CAKE</span><span>₹250</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+		<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-16">
+			
+		</div>
+<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="sp-2">
+			<span id="h" class="text-capitalizeze">STRAWBERRY CREAM</span><span>₹150</span>
+			<p>bake,cake,take</p>
+			<button>order now</button>
+		</div>
+
+
+	</div>
+</div>
+
+<!-- our master chef -->
+
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-top:100px!important;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Our Master Chef</h1>
+</div>
+<div  class="container" style="margin-top: 50px;">
+	<div class="row"> 
+
+	<div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="chef-1">
+		<div id="our-img-1"></div>
+		
+		<h4>Ashutosh Jha</h4>
+		<p>Master Chef</p>
+		<span><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></span>
+    </div>
+
+    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="chef-1">
+    	<div id="our-img-2"></div>
+		
+		<h4>Shubham Mishra</h4>
+		<p>Head Chef</p>
+		<span><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></span>
+    </div>
+
+    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="chef-1">
+    	<div id="our-img-3"></div>
+		
+		<h4>Shivam Anand</h4>
+		<p>Chef</p>
+		<span><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></span>
+    </div>
+
+    <div class="col-xl-3 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto " id="chef-1">
+    	<div id="our-img-4"></div>
+		
+		<h4>Yash Verma</h4>
+		<p>Chef</p>
+		<span><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></span>
+    </div>
+
+    </div>
+
+</div>
+
+<!-- <book a table> -->
+	<p id="book" ></p>
+<div class="container-fluid" style="margin-top: 50px;">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Book A Table</h1>
+</div>
+<br>
+<br>
+
+	<div  id="table-d" style="margin-top: 50px;">
+		
+			<div  id="table">
+				<h1>Make Reservation</h1>
+
+				<label>Name</label>
+				<input type="text" name="" placeholder="Your Name">
+
+				<label>Email</label>
+				<input type="text" name="" placeholder="Your Email"><br>
+
+				<label>Phone</label>
+				<input type="text" name="" placeholder="Phone">
+
+				<label>Date</label>
+				<input type="text" name="" placeholder="Date"><br>
+
+                <label>Time</label>
+				<input type="text" name="" placeholder="Time">
+
+				<label>Person</label>
+				<input type="text" name="" placeholder="person">
+
+				<button id="book-btn">Make A Reservation</button>
+			
+	</div>
+	</div>
+
+
+<!-- ///last sec// -->
+<div class="container-fluid" id="l-sec" style="margin-top: 50px;">
+	<div class="row">
+		 <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto"  id="l-1">
+		 	<div id="logo-d">
+		 	<span id="site-name-l">Z<span style="color: orange;">i</span>X</span>
+		 	</div>
+		 	<br>
+		 	<div><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></div>
+		 </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto" style="margin-top: 29px!important;" id="l-2">
+		  	<h2 >Opening Hours</h2>
+		  	<p style="margin-left: 0px!important;color:orange!important;cursor:text;">Saturday - Friday</p>
+		  	<p style="margin-bottom: 29px;margin-left: 0px!important;color:orange!important;cursor:text;">5AM - 10PM</p>
+		  	<h2>Quick Links</h2>
+		  	<p>Faqs</p>
+		  	<p>Foods</p>
+		  	<p>Contact</p>
+		  	<p>Events</p>
+		  </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10 col-10 d-block m-auto  text-center" style="margin-top: 29px!important;" id="l-4" >
+
+      <h2 class="text-center text-capitalize" >latest blogs</h2>
+      <span><img src="4.jpeg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 22,2020</p><p class="text-capitalize " style="margin-top: -10px;">soya soup reciepe</p></span>
+
+      <span><img src="5.jpg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 26,2020</p><p class="text-capitalize " style="margin-top: -10px;">idli reciepe</p></span>
+
+      <span><img src="7.jpg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 24,2020</p><p class="text-capitalize " style="margin-top: -10px;">dal tadka receipe</p></span>
+
+    </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto" id="l-3" style="margin-top: 29px!important;">
+		  	<h2>Our Gmail</h2>
+		  	<p>YESAJ9354@GMAIL.COM</p>
+		  	<h4>Subcribe Our News Letter</h4>
+		  	<input type="text" name="" placeholder="enter Your Email Id">
+		  	<button style="margin-top: 10px;">Subscribe Us</button>
+		  </div>
+
+		   
+
+	</div>
+</div>
+
+<div class="container text-center m-auto d-block text-light" style="font-size: 14px!important;padding-top: 20px;margin-bottom: -50px!important;">
+  <p>Copyright ©2020 All rights reserved | this website is made with passion by Ashu Jha</p>
+</div> 
+</body>
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" >
+	
+
+	$(document).ready(function(){
+        $('#num').hide();
+        
+        $('#call').click(function()
+        {
+          $('#num').toggle(500);
+         
+        });
+
+	});
+</script>
+
+<script type="text/javascript">
+	let msg=document.getElementById("msg");
+	let nav=document.getElementById("nav");
+		window.addEventListener('scroll',function(){
+  		value = window.scrollY;
+  		
+  		msg.style.top = value * 2 + 'px';
+
+  		if (value < 50) {
+  			msg.style.position ="relative";
+          msg.style.top ="320px";
+       
+
+  		}
+  		if (value <380) {
+  		
+          msg.style.opacity ="1";
+       
+
+  		}
+
+  		if (value >380) {
+  		
+          msg.style.opacity ="0";
+       
+
+  		}
+
+  
+
+  		if (value >110) {
+  		nav.style.position ="fixed";
+  	
+  		nav.style.transform="rotateX(360deg)";
+  		nav.style.backgroundColor="#000000";	
+
+  		}
+  		if (value <10) {
+  		nav.style.position ="relative";
+
+  		nav.style.transform="rotateX(0deg)";
+  		nav.style.backgroundColor="";
+
+  		}
+  	});
+</script>
+
+<!-- //select your meal// -->
+
+<script type="text/javascript">
+
+	var img=["5","bb","7","b","3","8","d1","d2"];
+	var meal=document.getElementById('meal-d-2');
+	var meall=document.getElementById('meal-d-3');
+	var mealp=document.getElementById('m-p');
+	var mealn=document.getElementById('m-n');
+	var mealpp=document.getElementById('m-pp');
+	var mealnn=document.getElementById('m-nn');
+	var mp=["Breakfast","Lunch","Dinner","Dessert"];
+	var np=["1/4","2/4","3/4","4/4"];
+	var mpp=["South Indian Foods","Indian Thali","Punjabi Thali","Cakes"];
+	var npp=["Indian Snacks","Variety Of biryanis","Chinese Foods","Ice Creams"];
+	var b1=document.getElementById('b-1');
+		var b2=document.getElementById('b-2');
+			var b3=document.getElementById('b-3');
+				var b4=document.getElementById('b-4');
+				
+				
+
+ b1.style.backgroundColor="orange";
+     b1.style.color="black";
+   
+
+
+
+
+
+
+	function breakfast(){
+		mealp.innerHTML=mp[0];
+		mealn.innerHTML=np[0];
+		mealpp.innerHTML=mpp[0];
+		mealnn.innerHTML=npp[0];
+		
+    meal.innerHTML="<img src="+img[0]+".jpg>";
+    meall.innerHTML="<img src="+img[1]+".jpg>";
+
+    b1.style.backgroundColor="orange";
+     b1.style.color="black";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+
+
+     
+
+
+	}
+
+
+
+
+
+	function lunch(){
+			mealp.innerHTML=mp[1];
+		mealn.innerHTML=np[1];
+		mealpp.innerHTML=mpp[1];
+		mealnn.innerHTML=npp[1];
+		
+    meal.innerHTML="<img src="+img[2]+".jpg>";
+    meall.innerHTML="<img src="+img[3]+".jpg>";
+       b2.style.backgroundColor="orange";
+     b2.style.color="black";
+          b1.style.backgroundColor="";
+     b1.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+
+   
+
+     
+
+	}
+
+	
+
+
+
+	function dinner(){
+			mealp.innerHTML=mp[2];
+		mealn.innerHTML=np[2];
+		mealpp.innerHTML=mpp[2];
+		mealnn.innerHTML=npp[2];
+	
+    meal.innerHTML="<img src="+img[4]+".jpg>";
+    meall.innerHTML="<img src="+img[5]+".jpg>";
+          b1.style.backgroundColor="";
+     b1.style.color="";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+      b3.style.backgroundColor="orange";
+     b3.style.color="black";
+    
+	}
+
+	 
+	
+
+	function dessert(){
+			mealp.innerHTML=mp[3];
+		mealn.innerHTML=np[3];
+			mealpp.innerHTML=mpp[3];
+		mealnn.innerHTML=npp[3];
+		
+    meal.innerHTML="<img src="+img[6]+".jpg>";
+    meall.innerHTML="<img src="+img[7]+".jpg>";
+       b1.style.backgroundColor="";
+     b1.style.color="";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+      b4.style.backgroundColor="orange";
+     b4.style.color="black";
+     
+
+	}
+
+	 
+	
+
+	
+</script>
+
+<script type="text/javascript">
+
+  var navy = document.getElementById('nav-bg');
+
+   function closee()
+   {
+         navy.style.visibility="hidden";
+         navy.style.opacity="0";
+         navy.style.height="0%";
+          
+      }
+   
+
+   function opene()
+   {
+     navy.style.visibility="visible";
+         navy.style.opacity="1";
+         navy.style.width="90%";
+           navy.style.height="100%";
+    
+   }
+
+</script>
+</html>
