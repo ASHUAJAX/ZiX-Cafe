@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZIX || WHO</title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+/*#FFB500*/
+		*{
+               font-family: 'Roboto', sans-serif;
+
+		}
+		.progress-bar{
+     	width: 100px!important;
+     }
+		a{
+			text-decoration: none!important;
+		}
+		#bg{
+			background: linear-gradient(to top,#00000080,#00000080),url(food.png);
+			width: 100%!important;
+			height: 120%!important;
+			
+			padding:100px;
+			
+
+
+		}
+		#img-story{
+			height: 320px;
+			background: url(Story.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-attachment: fixed;
+			border:10px double black;
+			margin-bottom: 40px!important;
+		}
+
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			background-color: black;
+			
+		}
+		button:focus{
+			outline: none;
+		}
+#img-h{
+	background:linear-gradient(#00000070,#00000070) ,url(8.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120vh;
+	position: relative;
+	top: -110px;
+	z-index: 0;
+	overflow: hidden;
+
+}
+
+#img-h h1{
+	font-size: 80px;
+	color: orange!important;
+	position: absolute;
+	top: 51%;
+	text-align: center;
+    width: 100%;
+font-weight: bolder;
+text-shadow: 0px 0px 2px black,0px 0px 4px black;
+}
+
+
+#btn
+{
+	width: 200px;
+	padding:15px 0px 15px 0px ;
+	text-align: center;
+	background-color:black;
+	color: orange;
+	border: 5px double orange;
+	border-radius: 40px;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+
+#btn:hover
+{
+	border: 2px solid black;
+	background-color: orange;
+	color: black;
+}
+
+
+#site-name{
+	position: relative;
+	top: 40px;
+padding: 10px 31px 10px 31px ;
+	border: 5px double  orange;
+	font-size: 25px;
+	color: white;
+	margin-left: 50px;
+	letter-spacing: 2px;
+
+
+}
+
+#call{
+	
+	position: absolute;
+	top: 52px;
+	left: 80%;
+	width: 150px;
+	padding: 7px 0px 7px 0px ;
+	text-align: center;
+	background-color:black;
+	color: orange;
+	border: 5px double orange;
+	border-radius: 40px;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+#call:hover{
+	background-color:orange;
+	color: black;
+	border: 2px solid black;
+
+
+}
+
+#num{
+color: orange;background-color:black;width: 200px;height:40px;position: absolute;left: 77.7%;top:100px;text-align: center;padding-top: 10px;
+}
+
+
+/*		///navbar//*/
+
+#nav{
+	width: 100%;
+	transition: 0.5s!important;
+	box-shadow: 0px 0px 7px 0px orange;
+	height: 110px;
+	background-color: #00000299;
+	position: absolute;
+	top: 0px;
+	transition: 1s!important;
+	z-index: 999;
+	
+}
+
+		#nav ul{
+			
+			height: 40px;
+			width: 500px;
+			padding-top: 15px;
+			margin: auto;
+			margin-top: 0px;
+
+			
+		}
+		#nav ul li{
+			float: left;
+			margin-left: 15px;
+			list-style: none;
+			font-size: 20px;
+		padding: 5px 0px 5px 0px;
+		width: 70px;
+		text-align: center;
+		font-weight: bolder;
+		border-bottom: 0px solid orange;
+transition: 0.5s;
+color: orange;
+letter-spacing: 2px;
+			
+		}
+		#nav ul li:hover{
+			background-color: black;
+			color:white;
+			width: 90px;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;
+
+
+		}
+
+
+		
+#contact:hover{
+	width: 100px!important;
+}
+#nav-bg{
+	width: 0%;
+	height: 0vh;
+	background: linear-gradient(to top,#00000099,#000000),url(5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 99999;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	transition: 0.5s;
+	visibility: hidden;
+
+}
+#nav-bg #ul{
+
+height: 90%;
+margin-top: 150px!important;
+margin: auto;
+width: 200px;
+} 
+
+#nav-bg #li{
+			float: none!important;
+			text-align: center;
+			margin-top: 10px;
+			width: 150px;
+            font-size: 25px;
+			list-style: none;
+		padding: 5px 0px 5px 0px;
+		font-weight: bolder;
+		border-bottom: 0px solid orange;
+transition: 0.5s;
+color: orange;
+letter-spacing: 2px;
+			
+
+		}
+		#nav-bg #li:hover{
+				background-color: black;
+			color:white;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;
+}
+		#close{
+			margin-left: 80%;
+			border: 2px solid orange;
+			padding: 10px 10px 10px 10px;
+			position: relative;
+			top: 80px!important;
+			color: red;
+			font-size: 27px;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+		#close:hover{
+			background-color: red;
+			color:black;
+		}
+
+		#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 45px;
+			left: 90%;
+		}
+
+/*///who///*/
+
+
+
+/*//last section//*/
+#l-sec{
+	background-color:#00222249;
+	margin-top: 150px!important;
+	padding-top: 50px;
+	padding-bottom:20px;
+	box-shadow: 0px 0px 10px 1px #002222;
+	
+}
+#site-name-l{
+
+padding: 10px 41px 10px 41px ;
+	border: 5px double  orange;
+	font-size: 50px;
+	color: white;
+	letter-spacing: 2px;
+	margin: auto;
+	text-align: center;
+}
+#logo-d{
+	width: 300px;
+	margin: auto;
+}
+
+#l-1 div{
+	margin: auto;
+	
+	width: 300px;
+	text-align: center;	
+}
+#l-1 div i{
+	color: orange!important;
+	font-size: 25px;
+	margin-right: 5px;
+	margin-left: 5px;
+	transition: 0.2s;
+}
+#l-1 div i:hover{
+	color: white!important;
+	cursor: pointer;
+}
+#l-2{
+text-align: center!important;
+}
+#l-2 h2{
+	color: white;
+}
+#l-2 p{
+color: orange;
+transition: 0.5s;
+}
+#l-2 p:hover{
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #ffffff;
+}
+#l-3{
+	text-align: center;
+}
+#l-3 h2{
+color:white;
+}
+#l-3 h4{
+color:white;
+}
+#l-3 p{
+	color: orange;
+} 
+#l-3 input{
+	background-color: black;
+	padding-left: 20px;
+	border:none;
+	height: 38px;
+	border-radius: 10px;
+	color: orange;
+}
+#l-3 button{
+	background-color: transparent;
+	border:2px solid orange;
+	padding: 5px 15px 5px 15px ;
+	border-radius: 10px;
+	transition: 0.5s;
+	color: orange!important;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+#l-3 button:hover{
+	background-color: orange;
+	border-radius: 20px;
+	color: black!important;
+
+}
+#l-4 img{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+}
+#l-4 h2{
+	color: white;
+}
+#l-4 p{
+	color: orange;
+	transition: 0.5s;
+}
+#l-4 p:hover{
+	margin-left: 20px;
+	cursor: pointer;
+	color: #ffffff;
+
+}
+
+/*///responsive//*/
+
+@media(min-width: 1200px){
+#navicon{
+	visibility: hidden!important;
+}
+}
+
+@media(min-width: 1024px) and (max-width: 1199px){
+	#navicon{
+	visibility: hidden!important;
+}
+	
+	
+	
+	#img-h{
+		height: 100vh;
+	}
+}
+/*ipad pro*/
+@media(min-height: 1200px) and (max-height: 1370px){
+	
+	#navicon{
+	visibility: hidden!important;
+}
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+	
+
+
+	
+	
+		#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+
+	#call{
+		left: 65%;
+	}
+	#num{
+		left: 62%;
+	}
+	
+}
+
+@media(min-width: 640px) and (max-width: 767px){
+	
+	#sp-2{
+		margin-top: 0px;
+	}
+	
+		#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#call{
+		left: 62%;
+	}
+	#num{
+		left: 59%;
+	}
+	
+
+
+}
+
+@media(min-width: 480px) and (max-width: 640px){
+	
+	#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 42px;
+			left: 90%;
+		}
+	html{
+		overflow-x: hidden!important;
+	}
+	#sp-2{
+		margin-top: 0px;
+	}
+	
+	#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#site-name{
+		font-size: 21px;
+	    top: 55px;
+	}
+	#call{
+		left: 60%;
+		font-size: 12px!important;
+		width: 120px;
+	    border:4px double orange;
+	}
+
+	#num{
+		left: 60%;
+		top: 92px;
+		font-size: 12px;
+		width: 120px;
+	}
+	#btn{
+		font-size: 12px;
+		width: 135px;
+		padding:10px 0px 10px 0px;
+	}
+	
+	
+	
+	
+
+
+	
+	
+}
+
+@media(min-width: 320px) and (max-width: 479px){
+	
+	#navicon{
+			color: orange;
+			font-size: 40px;
+			position: absolute;
+			top: 37px;
+			left: 85%;
+		}
+	html{
+		overflow-x: hidden!important;
+	}
+	#img-h{
+		height: 100vh;
+	}
+	
+	
+	#nav li{
+visibility: hidden;
+font-size: 0px!important;
+	}
+	#nav ul {
+		width: 0px;
+	}
+	#site-name{
+		font-size: 21px;
+	    top: 55px;
+	    top: 20px;
+	}
+	#call{
+		left: 0%!important;
+		top: 68px;
+		margin-left: 45px;
+		font-size: 11px!important;
+		width: 120px;
+	    border:4px double orange;
+	}
+
+	#num{
+		left: 0%;
+		top: 110px;
+		margin-left: 44px;
+		font-size: 12px;
+		width: 120px;
+	}
+	#btn{
+		font-size: 12px;
+		width: 135px;
+		padding:10px 0px 10px 0px;
+	}
+     #logo-d{
+     	
+     width: 100%!important;
+     }
+     #l-1 div{
+     	width: 200px;
+     }
+     .text-light{
+     	font-size: 29px!important;
+     	padding-top: 5px;
+     }
+     #sp-2 #h{
+     	font-size: 16px!important;
+     }
+     #sp-2 span{
+     	font-size: 18px;
+     }
+}
+
+
+	</style>
+
+
+<div id="nav">
+	<span id="site-name">Z<span style="color: orange;">i</span>X</span>
+	<ul>
+		<a href="index.html"><li>Home</li></a>
+	   <a href="who.html"> <li style="background-color: black;
+			color:white;
+			width: 70px;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;
+">Who</li></a> 
+	    <a href="menu.html"> <li>Menu</li></a>
+	    <a href="blog.html"><li>Blog</li></a>
+	    <a href="contact.html"><li id="contact">contact</li></a>
+	</ul>
+
+
+	<span id="navicon" onclick="opene();"><i class="fa fa-navicon"></i></span>
+
+
+	<button id="call">CALL NOW</button>
+	<p id="num">+91 9354-699-687</p>
+</div>
+
+
+
+<!-- //mobile nav// -->
+	<div id="nav-bg">
+		<span id="close" onclick="closee();">&times;</span>
+		<ul id="ul">
+		<a href="index.html"><li id="li">Home</li></a>
+	   <a href="who.html"><li id="li" style="	background-color: black;
+			color:white;
+			border-bottom: 4px solid orange;
+			box-shadow: 0px 0px 2px 0px white;
+			cursor: pointer;">Who?</li></a> 
+	     <a href="menu.html"><li id="li">Menu</li></a>
+	    <a href="blog.html"><li id="li">Blog</li></a>
+	    <a href="contact.html"><li id="li">contact</li></a>
+		</ul>
+	</div>
+
+<div id="img-h">
+	<h1>Who We Are?</h1>
+</div>
+
+<!-- //who we are// -->
+<section id="bg">
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Our Mission</h1>
+</div>
+<h2 style="padding: 25px;color: #ffffff99" class="text-capitalize text-center">!! we are delievering best food at best price with freshness And Love !!</h2>
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Who?</h1>
+</div>
+
+<div class="container-fluid m-auto  text-capitalize d-block" style="color: #ffffff99; text-align:all;width: 100%;padding-top: 20px; padding-bottom: 20px; margin-bottom: 20px!important;">Completely randomly — an idea just fluttered down like a November leaf and landed on this patch of calendar, the day before the day in which all of the time we do not spend on a line to vote we will instead spend glued to election returns and trying not to bite our nails down to the nub — I’ve been thinking about the kind of cooking we do when tensions are high and a little distraction might be the height of self-care. May I recommend some extended time in the kitchen? Stirring a pot, kneading a dough, and reading a recipe forces us to briefly pause our scrolling and invest in something tangible, like a cozy meal. Lasagna with fresh pasta sheets! Peerless chicken noodle soup. A really luxurious Caesar salad. Pot pies. Wildly decadent macaroni-and-cheese. Falafel, from scratch. The highest calling of tomato soup and grilled cheese.Completely randomly — an idea just fluttered down like a November leaf and landed on this patch of calendar, the day before the day in which all of the time we do not spend on a line to vote we will instead spend glued to election returns and trying not to bite our nails down to the nub — I’ve been thinking about the kind of cooking we do when tensions are high and a little distraction might be the height of self-care. May I recommend some extended time in the kitchen? Stirring a pot, kneading a dough, and reading a recipe forces us to briefly pause our scrolling and invest in something tangible, like a cozy meal. Lasagna with fresh pasta sheets! Peerless chicken noodle soup. A really luxurious Caesar salad. Pot pies. Wildly decadent macaroni-and-cheese. Falafel, from scratch. The highest calling of tomato soup and grilled cheese.Completely randomly — an idea just fluttered down like a November leaf and landed on this patch of calendar, the day before the day in which all of the time we do not spend on a line to vote we will instead spend glued to election returns and trying not to bite our nails down to the nub — I’ve been thinking about the kind of cooking we do when tensions are high and a little distraction might be the height of self-care. May I recommend some extended time in the kitchen? Stirring a pot, kneading a dough, and reading a recipe forces us to briefly pause our scrolling and invest in something tangible, like a cozy meal. Lasagna with fresh pasta sheets! Peerless chicken noodle soup. A really luxurious Caesar salad. Pot pies. Wildly decadent macaroni-and-cheese. Falafel, from scratch. The highest calling of tomato soup and grilled cheese.</div>
+
+<div class="container-fluid">
+	<li class="progress-bar text-light m-auto" style="background-color: orange;border-radius: 100px;height: 5px!important;width: 10%;padding-top: 5px;margin-bottom: 10px!important;line-height: 10px;">____</li>
+	<h1 class="font-weight-bold text-light text-center" style="font-size: 45px;">Our Story</h1>
+</div>
+
+<div  class="container-fluid" style="margin-top: 20px;">
+	<div  class="row">
+		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto" id="img-story"></div>
+		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto" style="color: #ffffff99; text-align:all;width: 90%;padding-top: 20px; padding-bottom: 20px;">An idea just fluttered down like a November leaf and landed on this patch of calendar, the day before the day in which all of the time we do not spend on a line to vote we will instead spend glued to election returns and trying not to bite our nails down to the nub — I’ve been thinking about the kind of cooking we do when tensions are high and a little distraction might be the height of self-care. May I recommend some extended time in the kitchen? Stirring a pot, kneading a dough, and reading a recipe forces us to briefly pause our scrolling and invest in something tangible, like a cozy meal. Lasagna with fresh pasta sheets! Peerless chicken noodle soup. A really luxurious Caesar salad. Pot pies. Wildly decadent macaroni-and-cheese. Falafel, from scratch. The highest calling of tomato soup and grilled cheese.</div>
+	</div>
+</div>
+
+</section>
+
+
+<!-- ///last sec// -->
+
+<div class="container-fluid" id="l-sec" style="margin-top: 50px;">
+	<div class="row">
+		 <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto"  id="l-1">
+		 	<div id="logo-d">
+		 	<span id="site-name-l">Z<span style="color: orange;">i</span>X</span>
+		 	</div>
+		 	<br>
+		 	<div><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-whatsapp"></i></div>
+		 </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto" style="margin-top: 29px!important;" id="l-2">
+		  	<h2 >Opening Hours</h2>
+		  	<p style="margin-left: 0px!important;color:orange!important;cursor:text;">Saturday - Friday</p>
+		  	<p style="margin-bottom: 29px;margin-left: 0px!important;color:orange!important;cursor:text;">5AM - 10PM</p>
+		  	<h2>Quick Links</h2>
+		  	<p>Faqs</p>
+		  	<p>Foods</p>
+		  	<p>Contact</p>
+		  	<p>Events</p>
+		  </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10 col-10 d-block m-auto  text-center" style="margin-top: 29px!important;" id="l-4" >
+
+      <h2 class="text-center text-capitalize" >latest blogs</h2>
+      <span><img src="4.jpeg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 22,2020</p><p class="text-capitalize " style="margin-top: -10px;">soya soup reciepe</p></span>
+
+      <span><img src="5.jpg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 26,2020</p><p class="text-capitalize " style="margin-top: -10px;">idli reciepe</p></span>
+
+      <span><img src="7.jpg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 24,2020</p><p class="text-capitalize " style="margin-top: -10px;">dal tadka receipe</p></span>
+
+    </div>
+		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto" id="l-3" style="margin-top: 29px!important;">
+		  	<h2>Our Gmail</h2>
+		  	<p>YESAJ9354@GMAIL.COM</p>
+		  	<h4>Subcribe Our News Letter</h4>
+		  	<input type="text" name="" placeholder="enter Your Email Id">
+		  	<button style="margin-top: 10px;">Subscribe Us</button>
+		  </div>
+
+		   
+
+	</div>
+</div>
+
+<div class="container text-center m-auto d-block text-light" style="font-size: 14px!important;padding-top: 20px;margin-bottom: -50px!important;">
+  <p>Copyright ©2020 All rights reserved | this website is made with passion by Ashu Jha</p>
+</div> 
+</body>
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript" >
+	
+
+	$(document).ready(function(){
+        $('#num').hide();
+        
+        $('#call').click(function()
+        {
+          $('#num').toggle(500);
+         
+        });
+
+	});
+</script>
+
+<script type="text/javascript">
+	let msg=document.getElementById("msg");
+	let nav=document.getElementById("nav");
+		window.addEventListener('scroll',function(){
+  		value = window.scrollY;
+  		
+  		msg.style.top = value * 2 + 'px';
+
+  		if (value < 50) {
+  			msg.style.position ="relative";
+          msg.style.top ="320px";
+       
+
+  		}
+  		if (value <380) {
+  		
+          msg.style.opacity ="1";
+       
+
+  		}
+
+  		if (value >380) {
+  		
+          msg.style.opacity ="0";
+       
+
+  		}
+
+  
+
+  		if (value >110) {
+  		nav.style.position ="fixed";
+  	
+  		nav.style.transform="rotateX(360deg)";
+  		nav.style.backgroundColor="#000000";	
+
+  		}
+  		if (value <10) {
+  		nav.style.position ="relative";
+
+  		nav.style.transform="rotateX(0deg)";
+  		nav.style.backgroundColor="";
+
+  		}
+  	});
+</script>
+
+<!-- //select your meal// -->
+
+<script type="text/javascript">
+
+	var img=["5","bb","7","b","3","8","d1","d2"];
+	var meal=document.getElementById('meal-d-2');
+	var meall=document.getElementById('meal-d-3');
+	var mealp=document.getElementById('m-p');
+	var mealn=document.getElementById('m-n');
+	var mealpp=document.getElementById('m-pp');
+	var mealnn=document.getElementById('m-nn');
+	var mp=["Breakfast","Lunch","Dinner","Dessert"];
+	var np=["1/4","2/4","3/4","4/4"];
+	var mpp=["South Indian Foods","Indian Thali","Punjabi Thali","Cakes"];
+	var npp=["Indian Snacks","Variety Of biryanis","Chinese Foods","Ice Creams"];
+	var b1=document.getElementById('b-1');
+		var b2=document.getElementById('b-2');
+			var b3=document.getElementById('b-3');
+				var b4=document.getElementById('b-4');
+				
+				
+
+ b1.style.backgroundColor="orange";
+     b1.style.color="black";
+   
+
+
+
+
+
+
+	function breakfast(){
+		mealp.innerHTML=mp[0];
+		mealn.innerHTML=np[0];
+		mealpp.innerHTML=mpp[0];
+		mealnn.innerHTML=npp[0];
+		
+    meal.innerHTML="<img src="+img[0]+".jpg>";
+    meall.innerHTML="<img src="+img[1]+".jpg>";
+
+    b1.style.backgroundColor="orange";
+     b1.style.color="black";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+
+
+     
+
+
+	}
+
+
+
+
+
+	function lunch(){
+			mealp.innerHTML=mp[1];
+		mealn.innerHTML=np[1];
+		mealpp.innerHTML=mpp[1];
+		mealnn.innerHTML=npp[1];
+		
+    meal.innerHTML="<img src="+img[2]+".jpg>";
+    meall.innerHTML="<img src="+img[3]+".jpg>";
+       b2.style.backgroundColor="orange";
+     b2.style.color="black";
+          b1.style.backgroundColor="";
+     b1.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+
+   
+
+     
+
+	}
+
+	
+
+
+
+	function dinner(){
+			mealp.innerHTML=mp[2];
+		mealn.innerHTML=np[2];
+		mealpp.innerHTML=mpp[2];
+		mealnn.innerHTML=npp[2];
+	
+    meal.innerHTML="<img src="+img[4]+".jpg>";
+    meall.innerHTML="<img src="+img[5]+".jpg>";
+          b1.style.backgroundColor="";
+     b1.style.color="";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b4.style.backgroundColor="";
+     b4.style.color="";
+      b3.style.backgroundColor="orange";
+     b3.style.color="black";
+    
+	}
+
+	 
+	
+
+	function dessert(){
+			mealp.innerHTML=mp[3];
+		mealn.innerHTML=np[3];
+			mealpp.innerHTML=mpp[3];
+		mealnn.innerHTML=npp[3];
+		
+    meal.innerHTML="<img src="+img[6]+".jpg>";
+    meall.innerHTML="<img src="+img[7]+".jpg>";
+       b1.style.backgroundColor="";
+     b1.style.color="";
+        b2.style.backgroundColor="";
+     b2.style.color="";
+        b3.style.backgroundColor="";
+     b3.style.color="";
+      b4.style.backgroundColor="orange";
+     b4.style.color="black";
+     
+
+	}
+
+	 
+	
+
+	
+</script>
+
+<script type="text/javascript">
+
+  var navy = document.getElementById('nav-bg');
+
+   function closee()
+   {
+         navy.style.visibility="hidden";
+         navy.style.opacity="0";
+         navy.style.height="0%";
+          
+      }
+   
+
+   function opene()
+   {
+     navy.style.visibility="visible";
+         navy.style.opacity="1";
+         navy.style.width="90%";
+           navy.style.height="100%";
+    
+   }
+
+</script>
+</html>
