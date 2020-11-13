@@ -32,14 +32,9 @@
 
 
 		}
-		#img-story{
-			height: 320px!important;
-			background: url(Story.jpg);
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-attachment: fixed;
-			border:10px double black;
-			margin-bottom: 40px!important;
+		img-w{
+			height:100%;
+			width:100%;
 		}
 
 		html{
@@ -614,7 +609,7 @@ font-size: 0px!important;
 		<span id="close" onclick="closee();">&times;</span>
 		<ul id="ul">
 		<a href="index.html"><li id="li">Home</li></a>
-	   <a href="who.html"><li id="li" style="	background-color: black;
+	   <a href="who.html"><li id="li" style="background-color: black;
 			color:white;
 			border-bottom: 4px solid orange;
 			box-shadow: 0px 0px 2px 0px white;
@@ -650,7 +645,7 @@ font-size: 0px!important;
 
 <div  class="container-fluid" style="margin-top: 20px;">
 	<div  class="row">
-		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto" id="img-story"></div>
+		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto" id="img-story"><img src="story.jpg" id="img-w"></div>
 		<div class="col-xl-5 col-lg-5 col-md-5 col-sm-10  col-10 d-block m-auto" style="color: #ffffff99; text-align:all;width: 90%;padding-top: 20px; padding-bottom: 20px;">An idea just fluttered down like a November leaf and landed on this patch of calendar, the day before the day in which all of the time we do not spend on a line to vote we will instead spend glued to election returns and trying not to bite our nails down to the nub — I’ve been thinking about the kind of cooking we do when tensions are high and a little distraction might be the height of self-care. May I recommend some extended time in the kitchen? Stirring a pot, kneading a dough, and reading a recipe forces us to briefly pause our scrolling and invest in something tangible, like a cozy meal. Lasagna with fresh pasta sheets! Peerless chicken noodle soup. A really luxurious Caesar salad. Pot pies. Wildly decadent macaroni-and-cheese. Falafel, from scratch. The highest calling of tomato soup and grilled cheese.</div>
 	</div>
 </div>
@@ -770,139 +765,7 @@ font-size: 0px!important;
   	});
 </script>
 
-<!-- //select your meal// -->
 
-<script type="text/javascript">
-
-	var img=["5","bb","7","b","3","8","d1","d2"];
-	var meal=document.getElementById('meal-d-2');
-	var meall=document.getElementById('meal-d-3');
-	var mealp=document.getElementById('m-p');
-	var mealn=document.getElementById('m-n');
-	var mealpp=document.getElementById('m-pp');
-	var mealnn=document.getElementById('m-nn');
-	var mp=["Breakfast","Lunch","Dinner","Dessert"];
-	var np=["1/4","2/4","3/4","4/4"];
-	var mpp=["South Indian Foods","Indian Thali","Punjabi Thali","Cakes"];
-	var npp=["Indian Snacks","Variety Of biryanis","Chinese Foods","Ice Creams"];
-	var b1=document.getElementById('b-1');
-		var b2=document.getElementById('b-2');
-			var b3=document.getElementById('b-3');
-				var b4=document.getElementById('b-4');
-				
-				
-
- b1.style.backgroundColor="orange";
-     b1.style.color="black";
-   
-
-
-
-
-
-
-	function breakfast(){
-		mealp.innerHTML=mp[0];
-		mealn.innerHTML=np[0];
-		mealpp.innerHTML=mpp[0];
-		mealnn.innerHTML=npp[0];
-		
-    meal.innerHTML="<img src="+img[0]+".jpg>";
-    meall.innerHTML="<img src="+img[1]+".jpg>";
-
-    b1.style.backgroundColor="orange";
-     b1.style.color="black";
-        b2.style.backgroundColor="";
-     b2.style.color="";
-        b3.style.backgroundColor="";
-     b3.style.color="";
-        b4.style.backgroundColor="";
-     b4.style.color="";
-
-
-     
-
-
-	}
-
-
-
-
-
-	function lunch(){
-			mealp.innerHTML=mp[1];
-		mealn.innerHTML=np[1];
-		mealpp.innerHTML=mpp[1];
-		mealnn.innerHTML=npp[1];
-		
-    meal.innerHTML="<img src="+img[2]+".jpg>";
-    meall.innerHTML="<img src="+img[3]+".jpg>";
-       b2.style.backgroundColor="orange";
-     b2.style.color="black";
-          b1.style.backgroundColor="";
-     b1.style.color="";
-        b3.style.backgroundColor="";
-     b3.style.color="";
-        b4.style.backgroundColor="";
-     b4.style.color="";
-
-   
-
-     
-
-	}
-
-	
-
-
-
-	function dinner(){
-			mealp.innerHTML=mp[2];
-		mealn.innerHTML=np[2];
-		mealpp.innerHTML=mpp[2];
-		mealnn.innerHTML=npp[2];
-	
-    meal.innerHTML="<img src="+img[4]+".jpg>";
-    meall.innerHTML="<img src="+img[5]+".jpg>";
-          b1.style.backgroundColor="";
-     b1.style.color="";
-        b2.style.backgroundColor="";
-     b2.style.color="";
-        b4.style.backgroundColor="";
-     b4.style.color="";
-      b3.style.backgroundColor="orange";
-     b3.style.color="black";
-    
-	}
-
-	 
-	
-
-	function dessert(){
-			mealp.innerHTML=mp[3];
-		mealn.innerHTML=np[3];
-			mealpp.innerHTML=mpp[3];
-		mealnn.innerHTML=npp[3];
-		
-    meal.innerHTML="<img src="+img[6]+".jpg>";
-    meall.innerHTML="<img src="+img[7]+".jpg>";
-       b1.style.backgroundColor="";
-     b1.style.color="";
-        b2.style.backgroundColor="";
-     b2.style.color="";
-        b3.style.backgroundColor="";
-     b3.style.color="";
-      b4.style.backgroundColor="orange";
-     b4.style.color="black";
-     
-
-	}
-
-	 
-	
-
-	
-</script>
 
 <script type="text/javascript">
 
