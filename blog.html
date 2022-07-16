@@ -726,6 +726,144 @@ padding: 5px;border-radius: 20px; margin-top: 20px;width:100px;background: orang
 
       <span><img src="7.jpg"></span><span ><p class="text-capitalize" style="color: white!important;margin-left:0px!important;margin-top: 10px;">oct 24,2020</p><p class="text-capitalize " style="margin-top: -10px;">dal tadka receipe</p></span>
 
+			  <code>
+			
+		1.(
+//write a program to obtain ip address and host hostname in java
+import java.net.InetAddress;
+class HelloWorld {
+    public static void main(String[] args) throws Exception{
+       String host="www.programiz.com";
+       
+       InetAddress iaddress = InetAddress.getByName(host);
+       
+       System.out.println("Host : "+iaddress.getHostName());
+       System.out.println("Ip address : "+iaddress.getHostAddress());
+    }
+}
+)
+
+2.(
+//write a program to print welcome client using servlet
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+@WebServlet("/MyServlet")
+public class MyServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    public MyServlet() {
+        super();
+          }
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		out.print("<html><head>My First Servlet</head><body>");
+		out.print("<center><h2>");
+		out.print("Welcome to HTTP Servlets</h2></center>");
+		out.print("<p>doGet() Method is executing....</p>");
+		out.print("</body></html>");
+	}
+}
+)
+
+3.(
+//write a program to obtain access private members of class using reflection
+
+// Access Private Field Using Reflection in Java
+import java.lang.reflect.Field;
+
+// Student class declaration
+class Student {
+
+	// private fields
+	private String name;
+	private int age;
+
+	// Constructor
+	public Student(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+	}
+
+	// Getters and setters
+	public String getName() { return name; }
+
+	public void setName(String name) { this.name = name; }
+
+	private int getAge() { return age; }
+
+	public void setAge(int age) { this.age = age; }
+
+	// Override toString method to get required
+	// output at terminal
+	@Override public String toString()
+	{
+		return "Employee [name=" + name + ", age=" + age
+			+ "]";
+	}
+}
+
+// Program will throw an exception on online IDE
+// Compile and run the program on offline IDE
+class GFG {
+
+	public static void main(String[] args)
+	{
+		try {
+
+			// Student object created
+			Student e = new Student("Kapil", 23);
+
+			// Create Field object
+			Field privateField
+				= Student.class.getDeclaredField("name");
+
+			// Set the accessibility as true
+			privateField.setAccessible(true);
+
+			// Store the value of private field in variable
+			String name = (String)privateField.get(e);
+
+			// Print the value
+			System.out.println("Name of Student:" + name);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+)
+
+4.(
+//write a program to print 1 to 100 numbers using thread
+
+public class Main implements Runnable {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    
+    Thread thread = new Thread(obj);
+    thread.start();
+    System.out.println("This code is outside of the thread");
+  }
+    
+  public void run() {
+    System.out.println("This code is running in a thread");
+    
+    for(int i=1;i<=100;i++){
+   System.out.println(i);
+  }
+  }
+}
+)
+	
+			  </code>
     </div>
 		  <div class="col-xl-3 col-lg-3 col-md-10 col-sm-10  col-10 d-block m-auto" id="l-3" style="margin-top: 29px!important;">
 		  	<h2>Our Gmail</h2>
